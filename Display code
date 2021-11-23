@@ -1,0 +1,14 @@
+import pygame
+BLACK = (0,0,0)
+WHITE = (255,255,255)
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+
+pygame.display.set_mode(size=(0,0),flags=0, depth=0, display = 0)
+scn_width = 640
+scn_height = 480
+screen = pygame.display.set_mode((scn_width, scn_height))
+screen.fill(BLACK)
+pygame.draw.circle(screen, WHITE, [320,240], 240)
+pygame.display.flip()
